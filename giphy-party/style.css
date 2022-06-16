@@ -1,0 +1,43 @@
+* {
+    outline: none
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: pink;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search{
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+}
+.submit-button{
+    border-radius: 20px;
+    height: 40px;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.giphy img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
